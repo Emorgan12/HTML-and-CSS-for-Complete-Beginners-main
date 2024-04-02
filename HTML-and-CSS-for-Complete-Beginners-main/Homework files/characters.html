@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<content>HTML and CSS for Complete Beginners Homework: Characters</content>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+
+		<style>
+			
+			*{
+				font-family: poppins, sans-serif;
+			}
+			.text{
+				padding-top: 3rem;
+				padding-left: 15rem;
+			}
+
+			.name{
+				text-align: start;
+			}
+			.content{
+				font-weight: 800;
+			}
+			.card {
+				border-radius: 16px;
+				width: 561px;
+				height: 297px;
+				margin-bottom: 2rem;
+				
+			}
+			.stats{
+				list-style: none;
+				padding-left: 0;
+			}
+
+			.stats li{
+				display: inline-block;
+				padding-right: 2rem;
+			}
+
+			#viking{
+				background-image: url(images/characters/bg-elephant.jpg);
+			}
+
+			#sorceress{
+				background-image: url(images/characters/bg-cat.jpg);
+			}
+
+			#fashionista{
+				background-image: url(images/characters/bg-bunny.jpg);
+			}
+			</style>
+	</head>
+	<body>
+		<section class="learn">
+			<!-- Practice area start -->
+
+			<div class="card" id="viking">
+				<div class="text">
+					<h2 class="name">The Viking</h2>
+					<ul class="stats">
+						<li>
+							<p class="content">68%</p>
+							<p class="label">Win Rate</p>
+						</li>
+						<li>
+							<p class="content">522</p>
+							<p class="label">Games Played</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="card" id="sorceress">
+				<div class="text">
+					<h2 class="name">The Sorceress</h2>
+					<ul class="stats">
+						<li>
+							<p class="content">97%</p>
+							<p class="label">Win Rate</p>
+						</li>
+						<li>
+							<p class="content">1922</p>
+							<p class="label">Games Played</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="card" id="fashionista">
+				<div class="text">
+					<h2 class="name">The Fashionista</h2>
+					<ul class="stats">
+						<li>
+							<p class="content">24%</p>
+							<p class="label">Win Rate</p>
+						</li>
+						<li>
+							<p class="content">124</p>
+							<p class="label">Games Played</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="Characters">
+			<img width="720px" src="images/reference/characters.png" alt="Characters" />
+		</section>
+	</body>
+</html>

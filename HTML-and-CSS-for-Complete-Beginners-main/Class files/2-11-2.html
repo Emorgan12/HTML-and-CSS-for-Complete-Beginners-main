@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners: Example 2-11-2</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
+	</head>
+
+	<body class="flip">
+		<section class="learn">
+			<!-- Practice area start -->
+
+			<h1>Your Order</h1>
+
+			<form action="" method="get" id="order-form">
+				<div>
+					<label for="order-name">Name</label>
+					<input type="text" name="order-name" id="order-name" placeholder="Your Full Name">
+				</div>
+				<div>
+					<label for="order-email"></label>
+					<input type="email" name="order-email" id="order-email" disabled value="dawdwadad@dwada.com">
+				</div>
+				<div>
+					<label for="order-address-1">Address</label>
+					<input type="text" name="order-address-1" id="order-address-1" placeholder="Address Line 1">
+					<input type="text" name="order-address-2" id="order-address-2" placeholder="Address Line 2">
+				</div>
+				<div>
+					<div>
+						<label for="order-city">City</label>
+						<input type="text" name="order-city" id="order-city">
+					</div>
+					<div>
+						<label for="order-state">State</label>
+						<select name="order-state" id="order-state">
+							<option value="Texas">Texas</option>
+							<option value="California">California</option>
+							<option value="Kansas">Kansas</option>
+							<option value="Florida">Florida</option>
+							<option value="Wyoming">Wyoming</option>
+						</select>
+					</div>
+					<div>
+						<label for="order-zip">ZIP</label>
+						<input type="text" name="order-zip" id="order-zip">
+					</div>
+				</div>
+				<div>
+					<label>What colour samples should we send you?</label>
+					<label for="white"> 
+						<input type="checkbox" name="order-colour", id="white" value="white" disabled>White
+					</label>
+					<label for="Magenta"> 
+						<input type="checkbox" name="order-colour", id="Magenta" value="Magenta">Magenta
+					</label>
+					<label for="Coral"> 
+						<input type="checkbox" name="order-colour", id="Coral" value="Coral">Coral
+					</label>
+					<label for="Burgundy"> 
+						<input type="checkbox" name="order-colour", id="Burgundy" value="Burgundy">Burgundy
+					</label>
+					<label for="Charcoal"> 
+						<input type="checkbox" name="order-colour", id="Charcoal" value="Charcoal">Charcoal
+					</label>
+				</div>
+
+				<div>
+					<label>How large is your team</label>
+
+					<label for="team-small">
+						<input type="radio" name="team-size" id="team-small">1-5 People
+					</label>
+					<label for="team-medium">
+						<input type="radio" name="team-size" id="team-medium" checked>6-10 People
+					</label>
+					<label for="team-large">
+						<input type="radio" name="team-size" id="team-large">10+ People
+					</label>
+				</div>
+
+				<div>
+					<label for="order-comments">Comments</label><br>
+					<textarea name="order-comments" id="order-comments" cols="30" rows="10"></textarea>
+				</div>
+
+				<div>
+					<label for="offer-signup">
+						<input type="checkbox" name="offer-signup" id="offer-signup"> Sign Up for special offers
+					</label>
+				</div>
+			</form>
+			<button form="order-form">Place Order</button>
+
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="lesson 2-11: Using Forms and Buttons">
+			<img width="903px" src="images/reference/order-form.png" alt="Reference image" />
+		</section>
+	</body>
+</html>
