@@ -13,15 +13,173 @@
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
 
 		<style>
-			/* Write your CSS here */
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: 'Poppins', sans-serif;
+				color: rgb(19, 42, 59);
+			}
+
+
+			h1 {
+				font-size: 3.375rem;
+				line-height: 1.33;
+				letter-spacing: -2px;
+				margin: .5rem 0 3rem;
+			}
+			h2 {
+				font-size: 1.5rem;
+				line-height: 1.5;
+				font-weight: 400;
+				color:rgba(19, 42, 59, 0.8);
+				margin-bottom: 3rem;
+			}
+
+			p.accent {
+				color: #00C689;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+			}
+
+			nav ul {
+				list-style: none;
+				padding: 0;
+			}
+
+			nav ul li{
+				display: inline;
+				padding-right: 2rem;
+			}
+
+			a {
+				color:rgb(19, 42, 59);
+				text-decoration: none;
+				font-weight: 500;
+			}
+
+			.btn {
+				display: inline-block;
+				color: white;
+				background-color: #2C86D9;
+				border-radius: 100px;
+				padding: 1rem 2rem;
+				display: inline-flex;
+				gap: .5rem;
+				align-items: center;
+			}
+
+			.btn-outline img{
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			.btn.outline {
+				background-color: transparent;
+				border: 2px solid #2C86D9;
+				color: #2C86D9;
+				border-radius: 100px;
+				padding: 1rem 2rem;
+				vertical-align: middle;
+			}
+
+			header {
+				margin-bottom: 6rem;
+				display: flex;
+				align-items: center;
+				justify-content: space-between
+			}
+
+			.hero img {
+				max-width: 100%;
+			}
+
+			.btn-mobile{
+				display: none;
+			}
+
+			#hero-illustration{
+				position: relative;
+				float: right;
+				top: 0;
+			}
+
+			.hero{
+				padding-right: 4rem;
+			}
+			@media screen and (max-width :1200px){
+				header nav, 
+				header .btn{
+					display: none;
+				}
+
+				.btn-mobile{
+					float: right;
+				}
+
+				.hero{
+					grid-template-columns: 100%;
+					gap: 4rem;
+					position: relative;
+				}
+
+				#hero-illustration{
+					position: relative;
+					padding-bottom: 5rem;
+					float: left;
+				}
+
+				header{
+					margin-bottom: 4rem;
+					order: 0;
+				}
+
+				h1, h2{
+					margin-bottom: 2rem;
+				}
+			}
 		</style>
 	</head>
 	<body class="flip">
 		<section class="learn">
 			<!-- Practice area start -->
 
-			<!-- Write your HTML here -->
+			<header class="main-header">
+				<a href=""><img src="images/hero/logo-wally.svg" alt="Logo Wally"></a>
 
+				<b>
+					<nav>
+						<ul>
+							<li><a href="">Discover Wally</a></li>
+							<li><a href="">Pricing</a></li>
+							<li><a href="">About Us</a></li>
+							<li><a href="">Contact</a></li>
+						</ul>
+					</nav>
+				</b>
+
+				<a href="" class="btn outline">Start Now <img src="images/hero/arrow-right-color.svg" alt="Arrow right"></a>
+				<a href="" class="btn-mobile"><img src="images/hero/menu-dots.svg" alt="Menu dots"></a>
+			</header>
+
+
+
+			<section class="hero">
+
+				<img src="images/hero/illustration.svg" id="hero-illustration" alt="illustration">
+
+				<div class="content">
+					<p class="accent">Shopping made easy</p>
+					<h1>Create your digital wallet in just a few clicks.</h1>
+					<h2>Add your cards and pay with your phone everywhere. Convenience is the key.</h2>
+					<a href="" class="btn">Buy It Now <img src="images/hero/arrow-right-white.svg" alt="Arrow right"></a>
+				</div>
+
+				
+			</section>
 			<!-- Practice area end -->
 		</section>
 
