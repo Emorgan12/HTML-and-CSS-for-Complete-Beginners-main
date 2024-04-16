@@ -14,9 +14,90 @@
         <link rel="stylesheet" href="css/landing-page.css">
 	</head>
 	<body>
-		<!-- Write your HTML here -->
+		<section id="home-page">
+			<img src="images/landing-page/logo.svg" alt="logo">
 
-		<!-- Delete this after you get the design file -->
-		<p>Landing page design <a href="https://www.figma.com/file/pmr3UHzHBp37SsFFoZ4VmY/Elementor-Landing-Page?node-id=41%3A159">can be found here</a>. You can delete this paragraph when you start building the page.</p>
+			<h1>Modern Chairs Crafted With Love</h1>
+
+			<p>We love creating high quality and comfortable chairs</p>
+
+			<a href="#chairs">Discover our chair selection</a>
+		</section>
+		<section id="chairs">
+			<div>
+				<p>The selection</p>
+				<h1>Our Chairs</h1>
+				<p>We mostly sell one-off items. That means that we make one-of-a-kind furniture pieces so whoever buys it will have a unique item.</p>
+			</div>
+
+			<div class="sofa-chair">
+				<img src="images/landing-page/furniture-1.jpg" alt="Tufted white Leather sofa chair">
+				<p>01</p>
+				<h2>Tufted white Leather sofa chair</h2>
+				<p>This will fit perfectly in any beauty salon or modern home thanks to its timeless design</p>
+				<p>$289</p>
+			</div>
+
+			<div class="wooden-chair">
+				<img src="images/landing-page/furniture-2.jpg" alt="Black and brown wooden chair">
+				<p>02</p>
+				<h2>Black and brown wooden chair</h2>
+				<p>Both minimalistic and comfortable, this is a great choice for home or office</p>
+				<p>$99</p>
+			</div>
+
+			<div class="bar-stool">
+				<img src="images/landing-page/furniture-3.jpg" alt="Rustic wooden bar stool">
+				<p>03</p>
+				<h2>Rustic wooden bar stool</h2>
+				<p>Made from solid beechwood, this piece will fit nicely in your rustic kitchen</p>
+				<p>$139</p>
+			</div>
+
+			<div>
+				<p>Interested in our products? <a href="#contact-form">Send us a message</a> or <a href="#contact-info">visit our store</a></p>
+			</div>
+
+		</section>
+		<section id="contact-form">
+			<div>
+				<p>Contact Us</p>
+				<h1>Let's get in touch</h1>
+			</div>
+
+			<form action="post">
+				<div>
+					<label for="name" class="labels">Name</label><br>
+					<input type="text" id="name" name="name" class="inputs">
+				</div>
+				<div>
+					<label for="email" class="labels">Email Address</label><br>
+					<input type="email" id="email" name="email"  class="inputs">
+				</div>
+				<div>
+					<label for="message" class="labels">Message</label><br>
+					<textarea name="message" id="message" cols="30" rows="10" class="inputs"></textarea>
+				</div>
+
+				<button>Send Message</button>
+			</form>
+			<p>All fields are required. We'll get back to you as soon as possible.</p>
+		</section>
+		<section id="contact-info">
+			<div>
+				<p>Visit our Store</p>
+				<h1>(307)555-0133</h1>
+				<p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+			</div>
+			<div>
+				<img src="images/landing-page/icon-twitter.svg" alt="Twitter">
+				<img src="images/landing-page/icon-facebook.svg" alt="Facebook">
+				<img src="images/landing-page/icon-instagram.svg" alt="Instagram">
+			</div>
+
+			<div>
+				<p>&#169 Copyright 2021 The Chair Company. All Rights Reserved.</p>
+			</div>
+		</section>
 	</body>
 </html>
